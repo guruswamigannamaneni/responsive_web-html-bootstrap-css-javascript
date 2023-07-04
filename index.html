@@ -1,0 +1,218 @@
+<!-- creating a responsive website using html css and bootstrap and javascript -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>one shot website</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		body {
+			background-image: url(images/bg.png);
+			background-repeat: no-repeat;
+		}
+		#mobile {
+			width: 350px;
+			height: auto;
+			transform: rotate(30deg);
+			position: relative;
+			top: 30px;
+			transition-duration: 2s;
+		}
+		#img:hover{
+				background-color: yellow;
+		}
+		.mobile{
+			animation-name: mobile;
+			animation-iteration-count: infinite;
+			animation-fill-mode: forwards;
+			animation-duration: 2s;
+			}
+		@keyframes mobile{
+				0% 100%{
+					top: 30px;
+				}
+				50% {
+					top: 50px;
+				}
+		}
+		.card {
+			box-shadow: 1px 1px 5px 5px grey;
+			border-radius: 30px;
+		}
+		#special {
+			background-image: url(images/feature-bg.png);
+			background-repeat: no-repeat;	
+		}
+	</style>
+</head>
+<body >
+	<div class="container-fluid">
+		<!-- Navigation bar-->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      	<img src="images/logo/oneshot-white.png">
+		    </div>
+		    <ul class="nav navbar-nav d-inline text-end">
+		      <li class="active list-inline-item"><a class="text-decoration-none text-white"  href="#">Home</a></li>
+		      <li class="list-inline-item"><a class="text-decoration-none text-white" href="#">Features</a></li>
+		      <li class="list-inline-item"><a class="text-decoration-none text-white" href="#">Screenshots</a></li>
+		      <li class="list-inline-item"><a class="text-decoration-none text-white" href="">pricing</a></li>
+		      <li class="list-inline-item"><a class="text-decoration-none text-white" href="">contact</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		<div class="mt-5 mt-lg-5">
+		<!-- mobile beside stuff-->
+		<div class="container">
+		<div class="row">
+			<div  id="divmobile" class="col-lg-7 col-xl-7 col-md-7 col-12">
+				<p class="h1 mt-5 pt-5 mb-3" style="text-align: center;color:lightgoldenrodyellow" >Awesome mobiles</p>
+				<p style="width: 70%" class="mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="mx-auto my-3" style="width:70% ">
+				<button type="button" id="img" style="width:40% " class="btn btn-secondary btn-sm mx-2 my-3"><img class="img-fluid" src="images/icon/playstorte.png"></button>
+				<button type="button" style="width:40% " id="img" class="btn btn-secondary btn-sm my-3"><img class="img-fluid" src="images/icon/app-store-.png"></button>
+				</div>
+			</div>
+			<!-- mobile animation-->
+			<div class="col-lg-5 col-xl-5 col-md-5 col-12 ">
+				<div class="mx-auto" style="width:70%">
+				<img id="mobile" class="mobile img-fluid mx-auto"   src="images/m.png">
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+	<div class="mt-5 pt-5">
+			<div class="mt-5 pt-5">
+	<!-- COUNTER PART -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-xl-3 col-6 h1 text mt-5 mt-lg-5 bg-light" style="color:deeppink">
+				<div class="text-center">10 M</div>
+				<div class="text-center">users</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-xl-3 bg-light col-6 h1 text mt-5 mt-lg-5 border-end border-3"style="color:deeppink">
+				<div class="text-center">20 K</div>
+				<div class="text-center">downloads</div>
+			</div>
+			<div style="color:deeppink"class="col-lg-3 col-md-6 col-xl-3 col-6 h1 bg-light text mt-5 mt-lg-5">
+				<div class="text-center">30 M</div>
+				<div class="text-center">costumers</div>
+			</div>
+			<div style="color:deeppink" class="col-lg-3 col-md-6 col-xl-3 col-6 h1 text mt-5 bg-light mt-lg-5">
+				<div class="text-center">10 k</div>
+				<div class="text-center">followers</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</div> 
+	<div class="container mt-5">
+		<p class="mx-auto h1 text-center">Why do every people </p>
+		<p class="mx-auto h2 text-center">Love App-mobile</p>
+		<div style="width: 100px" class="border border-bottom border-danger borde-5 mx-auto "></div>
+		<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod
+		tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam,
+		</p>		
+	</div>
+	<!-- cards Area -->
+	<div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+  				<img class="card-img-top" src="images/promo-icon-bg.png" style="width: 200px; margin: auto" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+  				<img class="card-img-top" src="images/promo-icon-bg.png" style="width: 200px; margin: auto" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+  				<img class="card-img-top" src="images/promo-icon-bg.png" style="width: 200px; margin: auto" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- special features -->
+<div class="container-fluid" id="special">
+	<div class="pt-5" style="width:30%; height: auto;display: inline;float: right">
+		<img class="img-fluid" src="images/service-1.png">
+
+	</div>
+	<div class="container ps-5 ms-5 pt-5" style="display: inline;color: white">
+		<p class="h1 ms-5"> Our special features</p>
+		<p class="ms-5" style="text-indent: 30px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+	</div>
+
+	<div style="height: 80px"></div>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>
+		
+	</div>
+	<div style="height: 50px"></div>
+	<!-- second row -->
+	<div class="row">
+	<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="padding-top: 30px">
+		  <div class="card-body">
+		    <h4 class="card-title text-center" style="color: deeppink">clean design</h4>
+		    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore</p>
+		  </div>
+		</div>
+		</div>	
+</div>
+	
+	<script src="bootstrap.bundle.js"></script>
+</body>
+</html>
